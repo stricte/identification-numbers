@@ -1,0 +1,20 @@
+{
+    "name": "identification-numbers",
+    "version": "0.0.1",
+    "description": "Provides utility methods to validate and generate various identification numbers such as VAT, IBAN, PESEL, etc.",
+    "keywords": [],
+    "author": "Daniel Pacak <pacak.daniel@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/danielpacak/identification-numbers.git"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/danielpacak/identification-numbers/blob/master/LICENSE-MIT"
+        }
+    ],
+    "dependencies": {},
+    "devDependencies": {},
+    "main": "index.js"
+}
