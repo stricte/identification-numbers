@@ -12,12 +12,16 @@ npm install identification-numbers --save
 ## Usage
 
 ```js
-var iNumbers = require('identification-numbers');
+var idNumbers = require('identification-numbers');
 
-console.log('random NIP', iNumbers.randomNip());
-console.log('random REGON', iNumbers.randomRegon());
+console.log('random NIP', idNumbers.randomNip());
+console.log('random REGON', idNumbers.randomRegon());
+
+console.log(idNumbers.pesel().isValid('83071603434')); // -> true
+console.log('random PESEL', idNumbers.pesel().random());
 ```
 
 ## Release History
 
+* 0.0.2 Validate/Generate random PESEL
 * 0.0.1 Initial release
