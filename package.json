@@ -1,6 +1,6 @@
 {
     "name": "identification-numbers",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Provides utility methods to validate and generate various identification numbers such as VAT, IBAN, PESEL, etc.",
     "keywords": [],
     "author": "Daniel Pacak <pacak.daniel@gmail.com>",
