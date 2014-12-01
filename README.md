@@ -61,10 +61,13 @@ public class TestDrive {
 ```
 
 ## Release History
+* 0.0.4
+  * Validate PESEL
 * 0.0.3
   * Added random NIP generator
   * Added NIP validator
   * Added random REGON generator
   * Added REGON validator
-* 0.0.2 Validate/Generate random PESEL
-* 0.0.1 Initial release
+* 0.0.2
+* 0.0.1
+  * Initial release
