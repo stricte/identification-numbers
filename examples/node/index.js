@@ -1,10 +1,7 @@
-var idNumbers = require('identification-numbers');
+var identification_numbers = require('identification-numbers');
 
-var nip = idNumbers.nip();
-var regon = idNumbers.regon();
+var pesel = identification_numbers.pesel();
+var regon = identification_numbers.regon();
 
-console.log('random NIP', nip.random());
-console.log('random REGON', regon.random());
-
-console.log(nip.isValid('2372636037')); // -> true
-console.log(nip.isValid('1234567890')); // -> false
+console.log('Is PESEL `83071503434` valid?', pesel.isValid('83071503434'));
+console.log('Is REGON `975124224` valid?', regon.isValid('975124224'));
