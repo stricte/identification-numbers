@@ -1,6 +1,6 @@
 {
   "name": "identification-numbers",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/danielpacak/identification-numbers",
   "description": "Provides utility methods to validate and generate various identification numbers such as VAT, VIN, IBAN, PESEL, etc.",
   "keywords": [
