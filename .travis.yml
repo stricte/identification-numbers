@@ -4,4 +4,4 @@ node_js:
 before_script:
   - 'npm install jasmine-node -g'
 script:
-  - 'jasmine-node spec --verbose'
+  - 'jasmine-node test/spec --verbose'

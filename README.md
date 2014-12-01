@@ -2,6 +2,7 @@ Identification Numbers
 ======================
 [![Build Status](https://travis-ci.org/danielpacak/identification-numbers.svg?branch=master)](https://travis-ci.org/danielpacak/identification-numbers)
 [![npm version](https://badge.fury.io/js/identification-numbers.svg)](http://badge.fury.io/js/identification-numbers)
+[![devDependency Status](https://david-dm.org/danielpacak/identification-numbers/dev-status.svg)](https://david-dm.org/danielpacak/identification-numbers#info=devDependencies)
 
 Provides utility methods to validate and generate various identification numbers such as VAT, VIN, IBAN, PESEL, etc.
 

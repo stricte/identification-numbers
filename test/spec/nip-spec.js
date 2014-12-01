@@ -1,4 +1,6 @@
-var idNumbers = require('../lib/identification-numbers/index.js');
+'use strict';
+
+var idNumbers = require('../../lib/identification-numbers/index.js');
 
 describe('nip', function () {
 
@@ -8,7 +10,7 @@ describe('nip', function () {
         nip = idNumbers.nip();
     });
 
-    describe("random", function () {
+    describe('random', function () {
         it('should return random NIP', function () {
             var randomNip1 = nip.random();
             var randomNip2 = nip.random();
@@ -19,7 +21,7 @@ describe('nip', function () {
         });
     });
 
-    describe("isValid", function () {
+    describe('isValid', function () {
         it('should return true for valid NIP', function () {
             expect(nip.isValid('2372636037')).toBeTruthy();
         });

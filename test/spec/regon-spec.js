@@ -1,4 +1,6 @@
-var idNumbers = require('../lib/identification-numbers/index.js');
+'use strict';
+
+var idNumbers = require('../../lib/identification-numbers/index.js');
 
 describe('regon', function () {
 
@@ -8,7 +10,7 @@ describe('regon', function () {
         regon = idNumbers.regon();
     });
 
-    describe("random", function () {
+    describe('random', function () {
         it('should return random REGON', function () {
             var randomRegon1 = regon.random();
             var randomRegon2 = regon.random();
@@ -19,7 +21,7 @@ describe('regon', function () {
         });
     });
 
-    describe("isValid", function () {
+    describe('isValid', function () {
         it('should return true for valid REGON', function () {
             expect(regon.isValid('550440322')).toBeTruthy();
         });

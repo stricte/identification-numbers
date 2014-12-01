@@ -1,20 +1,20 @@
 {
-  "name": "identification-numbers",
-  "version": "0.0.5",
-  "homepage": "https://github.com/danielpacak/identification-numbers",
-  "description": "Provides utility methods to validate and generate various identification numbers such as VAT, VIN, IBAN, PESEL, etc.",
-  "keywords": [
-    "random",
-    "numbers",
-    "testing",
-    "pesel",
-    "regon",
-    "vin",
-    "iban"
-  ],
-  "authors": [
-    "Daniel Pacak <pacak.daniel@gmail.com>"
-  ],
-  "main": "lib/identification-numbers",
-  "license": "MIT"
+    "name": "identification-numbers",
+    "version": "0.0.6",
+    "homepage": "https://github.com/danielpacak/identification-numbers",
+    "description": "Provides utility methods to validate and generate various identification numbers such as VAT, VIN, IBAN, PESEL, etc.",
+    "keywords": [
+        "random",
+        "numbers",
+        "testing",
+        "pesel",
+        "regon",
+        "vin",
+        "iban"
+    ],
+    "authors": [
+        "Daniel Pacak <pacak.daniel@gmail.com>"
+    ],
+    "main": "lib/identification-numbers",
+    "license": "MIT"
 }
