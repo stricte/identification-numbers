@@ -85,6 +85,8 @@ public class TestDrive {
 ```
 
 ## Release History
+* 0.0.5
+  * Decode PESEL
 * 0.0.4
   * Validate PESEL
 * 0.0.3

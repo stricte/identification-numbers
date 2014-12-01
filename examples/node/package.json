@@ -2,6 +2,6 @@
     "name": "identification-numbers-node-example",
     "version": "0.0.1",
     "dependencies": {
-        "identification-numbers": "^0.0.4"
+        "identification-numbers": "^0.0.5"
     }
 }
