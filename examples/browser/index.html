@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Identification Numbers Node.js Example</title>
+    <script src="../../lib/identification-numbers/index.js"></script>
+</head>
+<body>
+<pre>
+<script>
+    // The API is now accessible through the window.identification_numbers global object.
+    var pesel = identification_numbers.pesel();
+    var regon = identification_numbers.regon();
+
+    document.writeln('Is PESEL `83071503434` valid? ' + pesel.isValid('83071503434'));
+    document.writeln('Is REGON `975124224` valid? ' + regon.isValid('975124224'));
+</script>
+</pre>
+</body>
+</html>

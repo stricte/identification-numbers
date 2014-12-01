@@ -12,7 +12,9 @@ npm install identification-numbers
 ```
 
 ## Usage
-### Hard-working Node.js Developers
+
+### In Node.js
+
 ```js
 var idNumbers = require('identification-numbers');
 
@@ -25,7 +27,31 @@ console.log('random REGON', regon.random());
 console.log(nip.isValid('2372636037')); // -> true
 console.log(nip.isValid('1234567890')); // -> false
 ```
-### Lazy Java Developers
+
+### In the Browser
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="../../lib/identification-numbers/index.js"></script>
+</head>
+<body>
+<pre>
+<script>
+    // The API is now accessible through the window.identification_numbers global object.
+    var pesel = identification_numbers.pesel();
+    var regon = identification_numbers.regon();
+
+    document.writeln('Is PESEL `83071503434` valid? ' + pesel.isValid('83071503434'));
+    document.writeln('Is REGON `975124224` valid? ' + regon.isValid('975124224'));
+</script>
+</pre>
+</body>
+</html>
+```
+
+### In Java
 
 > Beware of performance penalties.
 
