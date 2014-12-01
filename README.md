@@ -6,11 +6,11 @@ Provides utility methods to validate and generate various identification numbers
 ## Installation
 
 ```shell
-npm install identification-numbers --save
+npm install identification-numbers
 ```
 
 ## Usage
-
+### Hard-working Node.js Developers
 ```js
 var idNumbers = require('identification-numbers');
 
@@ -23,6 +23,9 @@ console.log('random REGON', regon.random());
 console.log(nip.isValid('2372636037')); // -> true
 console.log(nip.isValid('1234567890')); // -> false
 ```
+### Lazy Java Developers
+
+> Beware of performance penalties.
 
 ```java
 import com.google.common.io.Files;

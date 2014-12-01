@@ -1,8 +1,16 @@
 {
   "name": "identification-numbers",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Provides utility methods to validate and generate various identification numbers such as VAT, VIN, IBAN, PESEL, etc.",
-  "keywords": [],
+  "keywords": [
+    "random",
+    "numbers",
+    "testing",
+    "pesel",
+    "regon",
+    "vin",
+    "iban"
+  ],
   "author": "Daniel Pacak <pacak.daniel@gmail.com>",
   "repository": {
     "type": "git",
