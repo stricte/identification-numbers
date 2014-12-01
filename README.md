@@ -1,7 +1,7 @@
 Identification Numbers
 ======================
 
-Provides utility methods to validate and generate various identification numbers such as VAT, IBAN, PESEL, etc.
+Provides utility methods to validate and generate various identification numbers such as VAT, VIN, IBAN, PESEL, etc.
 
 ## Installation
 
@@ -14,11 +14,14 @@ npm install identification-numbers --save
 ```js
 var idNumbers = require('identification-numbers');
 
-console.log('random NIP', idNumbers.randomNip());
-console.log('random REGON', idNumbers.randomRegon());
-console.log('random PESEL', idNumbers.pesel().random());
+var nip = idNumbers.nip();
+var regon = idNumbers.regon();
 
-console.log(idNumbers.pesel().isValid('83071603434')); // -> true
+console.log('random NIP', nip.random());
+console.log('random REGON', regon.random());
+
+console.log(nip.isValid('2372636037')); // -> true
+console.log(nip.isValid('1234567890')); // -> false
 ```
 
 ```java
@@ -43,7 +46,7 @@ public class TestDrive {
         engine.eval("pesel = module.exports.pesel()");
 
         System.out.println(engine.eval("pesel.random()"));
-        System.out.println(engine.eval("pesel.isValid('83021111')"));
+        System.out.println(engine.eval("pesel.isValid('83071503434')")); // -> true
     }
 
     private Reader nodeModuleAsReader(final String moduleName) throws IOException {
@@ -54,6 +57,10 @@ public class TestDrive {
 ```
 
 ## Release History
-
+* 0.0.3
+  * Added random NIP generator
+  * Added NIP validator
+  * Added random REGON generator
+  * Added REGON validator
 * 0.0.2 Validate/Generate random PESEL
 * 0.0.1 Initial release

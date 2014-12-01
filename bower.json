@@ -1,0 +1,7 @@
+{
+  "name": "identification-numbers",
+  "version": "0.0.2",
+  "description": "Provides utility methods to validate and generate various identification numbers such as VAT, VIN, IBAN, PESEL, etc.",
+  "main": "lib/identification-numbers",
+  "license": "MIT"
+}
