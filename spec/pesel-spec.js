@@ -29,6 +29,7 @@ describe('pesel', function () {
     describe("decode", function () {
         it("should return decoded properties", function () {
             var decoded = pesel.decode('83071503434');
+            expect(decoded.ordinal).toEqual(343);
             expect(decoded.checksum).toEqual(4);
             expect(decoded.sex).toEqual('M');
         });
