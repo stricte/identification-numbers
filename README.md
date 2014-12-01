@@ -1,5 +1,6 @@
 Identification Numbers
 ======================
+[![Build Status](https://travis-ci.org/danielpacak/identification-numbers.svg?branch=master)](https://travis-ci.org/danielpacak/identification-numbers)
 
 Provides utility methods to validate and generate various identification numbers such as VAT, VIN, IBAN, PESEL, etc.
 
