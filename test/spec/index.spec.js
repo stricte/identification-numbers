@@ -8,6 +8,10 @@ describe('index', function () {
 
     it('should export pesel', function () {
         expect(indexModule.pesel).toBeDefined();
-    })
+    });
+
+    it('should export regon', function () {
+        expect(indexModule.regon).toBeDefined();
+    });
 
 });

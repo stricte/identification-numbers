@@ -12,12 +12,12 @@ describe('nip', function () {
 
     describe('random', function () {
         it('should return random NIP', function () {
-            var randomNip1 = nip().random();
-            var randomNip2 = nip().random();
+            var nip1 = nip().random(),
+                nip2 = nip().random();
 
-            expect(randomNip1).not.toEqual(randomNip2);
-            expect(nip(randomNip1).isValid()).toBeTruthy();
-            expect(nip(randomNip2).isValid()).toBeTruthy();
+            expect(nip1).not.toEqual(nip2);
+            expect(nip(nip1).isValid()).toBeTruthy();
+            expect(nip(nip2).isValid()).toBeTruthy();
         });
     });
 

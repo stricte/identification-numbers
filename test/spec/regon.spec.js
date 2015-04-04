@@ -12,12 +12,12 @@ describe('regon', function () {
 
     describe('random', function () {
         it('should return random REGON', function () {
-            var randomRegon1 = regon().random();
-            var randomRegon2 = regon().random();
+            var regon1 = regon().random(),
+                regon2 = regon().random();
 
-            expect(randomRegon1).not.toEqual(randomRegon2);
-            expect(regon(randomRegon1).isValid()).toBeTruthy();
-            expect(regon(randomRegon2).isValid()).toBeTruthy();
+            expect(regon1).not.toEqual(regon2);
+            expect(regon(regon1).isValid()).toBeTruthy();
+            expect(regon(regon2).isValid()).toBeTruthy();
         });
     });
 

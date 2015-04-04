@@ -5,7 +5,9 @@ Identification Numbers
 [![Dependency Status](https://david-dm.org/danielpacak/identification-numbers.svg)](https://david-dm.org/danielpacak/identification-numbers)
 [![devDependency Status](https://david-dm.org/danielpacak/identification-numbers/dev-status.svg)](https://david-dm.org/danielpacak/identification-numbers#info=devDependencies)
 
-Provides utility methods to validate and generate various identification numbers such as VAT, VIN, REGON, PESEL, etc.
+Provides utility methods to validate and generate various identification numbers such as NIP, REGON, PESEL, etc.
+
+Note that this project is still in its **incubating** phase.
 
 ## Installation
 
@@ -14,8 +16,6 @@ npm install identification-numbers
 ```
 
 ## Usage
-
-### In Node.js
 
 ```js
 var identification_numbers = require('identification-numbers'),

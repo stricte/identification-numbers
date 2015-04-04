@@ -1,5 +1,5 @@
 {
-    "name": "identification-numbers-node-example",
+    "name": "identification-numbers-examples",
     "version": "0.0.1",
     "dependencies": {
         "identification-numbers": "^0.0.6"
