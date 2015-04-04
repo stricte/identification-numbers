@@ -1,36 +1,34 @@
 'use strict';
 
-var idNumbers = require('../../lib/identification-numbers/index.js');
+var peselModule = require('../../lib/identification-numbers/pesel.js');
 
 describe('pesel', function () {
 
     var pesel;
 
     beforeEach(function () {
-        pesel = idNumbers.pesel();
+        pesel = peselModule.pesel;
     });
 
     describe('random', function () {
         it('random PESEL is not implemented yet', function () {
-            expect(function () {
-                pesel.random();
-            }).toThrow(new Error('I\'m not implemented yet :('));
+            expect(pesel().random()).toEqual('ABC');
         });
     });
 
     describe('isValid', function () {
         it('should return true for valid PESEL', function () {
-            expect(pesel.isValid('83071503434')).toBeTruthy();
+            expect(pesel('83071503434').isValid()).toBeTruthy();
         });
 
         it('should return false for too long PESEL', function () {
-            expect(pesel.isValid('83071503434' + '00')).toBeFalsy();
+            expect(pesel('83071503434' + '00').isValid()).toBeFalsy();
         });
     });
 
     describe('decode', function () {
         it('should return decoded properties', function () {
-            var decoded = pesel.decode('83071503434');
+            var decoded = pesel('83071503434').decode();
             expect(decoded.ordinal).toEqual(343);
             expect(decoded.checksum).toEqual(4);
             expect(decoded.sex).toEqual('M');
