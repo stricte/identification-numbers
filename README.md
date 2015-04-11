@@ -22,8 +22,8 @@ var identification_numbers = require('identification-numbers'),
     pesel = identification_numbers.pesel,
     regon = identification_numbers.regon;
 
-expect(pesel('83071503434').isValid()).toBeTruthy();
-expect(regon('975124224').isValid()).toBeTruthy();
+expect(pesel('83071511572').isValid()).toBeTrue();
+expect(regon('975124224').isValid()).toBeTrue();
 ```
 
 ## Release History
