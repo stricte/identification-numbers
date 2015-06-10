@@ -27,6 +27,8 @@ expect(regon('975124224').isValid()).toBeTruthy();
 ```
 
 ## Release History
+* 0.0.7
+  * Expermienal patch with no changes in code
 * 0.0.6
   * Fixed [issue #1](https://github.com/danielpacak/identification-numbers/issues/1)
 * 0.0.5
