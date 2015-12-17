@@ -32,6 +32,9 @@ describe('pesel', function () {
             expect(decoded.ordinal).toEqual(343);
             expect(decoded.checksum).toEqual(4);
             expect(decoded.sex).toEqual('M');
+            expect(decoded.year).toEqual(1983);
+            expect(decoded.month).toEqual(7);
+            expect(decoded.day).toEqual(15);
         });
     });
 
