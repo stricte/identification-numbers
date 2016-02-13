@@ -1,6 +1,6 @@
 Identification Numbers
 ======================
-[![Build Status](https://travis-ci.org/danielpacak/identification-numbers.svg?branch=master)](https://travis-ci.org/danielpacak/identification-numbers)
+[![Build Status](https://travis-ci.org/SOFTWARE-CLINIC/identification-numbers.svg?branch=master)](https://travis-ci.org/SOFTWARE-CLINIC/identification-numbers)
 [![npm version](https://badge.fury.io/js/identification-numbers.svg)](http://badge.fury.io/js/identification-numbers)
 [![Dependency Status](https://david-dm.org/danielpacak/identification-numbers.svg)](https://david-dm.org/danielpacak/identification-numbers)
 [![devDependency Status](https://david-dm.org/danielpacak/identification-numbers/dev-status.svg)](https://david-dm.org/danielpacak/identification-numbers#info=devDependencies)

@@ -13,12 +13,12 @@
   "author": "Daniel Pacak <pacak.daniel@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/danielpacak/identification-numbers.git"
+    "url": "git://github.com/SOFTWARE-CLINIC/identification-numbers.git"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/danielpacak/identification-numbers/blob/master/LICENSE-MIT"
+      "url": "https://github.com/SOFTWARE-CLINIC/identification-numbers/blob/master/LICENSE-MIT"
     }
   ],
   "dependencies": {},
@@ -27,5 +27,8 @@
     "grunt-contrib-jshint": "^0.11.1",
     "grunt-jasmine-node": "^0.3.1"
   },
-  "main": "lib/identification-numbers"
+  "main": "lib/identification-numbers",
+  "scripts": {
+    "test": "grunt test"
+  }
 }
