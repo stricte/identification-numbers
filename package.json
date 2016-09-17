@@ -1,7 +1,7 @@
 {
   "name": "identification-numbers-pl",
-  "version": "0.0.8-alpha",
-  "description": "Provides utility methods to validate and generate various identification numbers such as NIP, REGON, PESEL, etc.",
+  "version": "0.0.1-alpha.1",
+  "description": "Provides utility methods to validate and generate various identification numbers used in Poland such as NIP, REGON, PESEL, etc.",
   "keywords": [
     "random",
     "numbers",
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/SOFTWARE-CLINIC/identification-numbers-pl/issues"
   },
-  "license": "Apache-2.0",
+  "license": "MIT",
   "engines": {
     "node": ">= 0.10.x"
   },

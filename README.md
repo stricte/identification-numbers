@@ -15,7 +15,7 @@
 ## Installation
 
 ```shell
-$ npm install identification-numbers --save --save-exact
+$ npm install identification-numbers-pl --save --save-exact
 ```
 
 ## Quick Start
@@ -26,21 +26,3 @@ var ids = require('identification-numbers-pl');
 expect(ids.pesel('83071503434').isValid()).to.be.true;
 expect(ids.regon('975124224').isValid()).to.be.true;
 ```
-
-## Release History
-* 0.0.7
-  * Expermienal patch with no changes in code
-* 0.0.6
-  * Fixed [issue #1](https://github.com/danielpacak/identification-numbers/issues/1)
-* 0.0.5
-  * Decode PESEL
-* 0.0.4
-  * Validate PESEL
-* 0.0.3
-  * Added random NIP generator
-  * Added NIP validator
-  * Added random REGON generator
-  * Added REGON validator
-* 0.0.2
-* 0.0.1
-  * Initial release
