@@ -1,6 +1,6 @@
 {
-  "name": "identification-numbers",
-  "version": "0.0.7",
+  "name": "identification-numbers-pl",
+  "version": "0.0.8-alpha",
   "description": "Provides utility methods to validate and generate various identification numbers such as NIP, REGON, PESEL, etc.",
   "keywords": [
     "random",
@@ -13,23 +13,29 @@
   "author": "Daniel Pacak <pacak.daniel@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SOFTWARE-CLINIC/identification-numbers.git"
+    "url": "https://github.com/SOFTWARE-CLINIC/identification-numbers-pl.git"
   },
   "bugs": {
-    "url": "https://github.com/SOFTWARE-CLINIC/identification-numbers/issues"
+    "url": "https://github.com/SOFTWARE-CLINIC/identification-numbers-pl/issues"
   },
   "license": "Apache-2.0",
   "engines": {
     "node": ">= 0.10.x"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "0.12.0",
-    "grunt-jasmine-node": "0.3.1"
-  },
-  "main": "lib/identification-numbers",
+  "main": "index.js",
+  "files": [
+    "lib",
+    "index.js"
+  ],
   "scripts": {
-    "test": "grunt test"
+    "test": "mocha -R spec test/**/*.spec.js",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec test/**/*.spec.js",
+    "coveragetocodeclimate": "codeclimate-test-reporter < ./coverage/lcov.info"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "codeclimate-test-reporter": "0.3.3",
+    "istanbul": "0.4.5",
+    "mocha": "3.0.2"
   }
 }
