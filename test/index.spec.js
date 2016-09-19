@@ -1,11 +1,10 @@
 'use strict';
 
+var index = require('../index');
 var chai = require('chai');
 var expect = chai.expect;
 
 describe('index', function () {
-
-  var index = require('../index');
 
   it('should export nip', function () {
     expect(index.nip).to.be.defined;

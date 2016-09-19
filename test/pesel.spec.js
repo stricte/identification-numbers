@@ -1,23 +1,18 @@
 'use strict';
 
+var pesel = require('../lib/pesel');
 var chai = require('chai');
 var expect = chai.expect;
 
 describe('pesel', function () {
 
-  var pesel;
-
-  beforeEach(function () {
-    pesel = require('../lib/pesel');
-  });
-
-  describe('random', function () {
+  describe('#random', function () {
     it('random PESEL is not implemented yet', function () {
       expect(pesel().random()).to.equal('ABC');
     });
   });
 
-  describe('isValid', function () {
+  describe('#isValid', function () {
     it('should return true for valid PESEL', function () {
       expect(pesel('83071503434').isValid()).to.be.true;
     });
@@ -27,7 +22,7 @@ describe('pesel', function () {
     });
   });
 
-  describe('decode', function () {
+  describe('#decode', function () {
     it('should return decoded properties', function () {
       var decoded = pesel('83071503434').decode();
       expect(decoded.ordinal).to.equal(343);

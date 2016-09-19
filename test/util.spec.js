@@ -1,11 +1,10 @@
 'use strict';
 
+var util = require('../lib/util');
 var chai = require('chai');
 var expect = chai.expect;
 
 describe('util', function () {
-
-  var util = require('../lib/util');
 
   it('isString', function () {
     expect(util.isString('ABC')).to.be.true;

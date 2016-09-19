@@ -1,17 +1,12 @@
 'use strict';
 
+var nip = require('../lib/nip');
 var chai = require('chai');
 var expect = chai.expect;
 
 describe('nip', function () {
 
-  var nip;
-
-  beforeEach(function () {
-    nip = require('../lib/nip');
-  });
-
-  describe('random', function () {
+  describe('#random', function () {
     it('should return random NIP', function () {
       var nip1 = nip().random();
       var nip2 = nip().random();
@@ -22,7 +17,7 @@ describe('nip', function () {
     });
   });
 
-  describe('isValid', function () {
+  describe('#isValid', function () {
     it('should return true for valid NIP', function () {
       expect(nip('2372636037').isValid()).to.be.true;
     });

@@ -1,17 +1,12 @@
 'use strict';
 
+var regon = require('../lib/regon');
 var chai = require('chai');
 var expect = chai.expect;
 
 describe('regon', function () {
 
-  var regon;
-
-  beforeEach(function () {
-    regon = require('../lib/regon');
-  });
-
-  describe('random', function () {
+  describe('#random', function () {
     it('should return random REGON', function () {
       var regon1 = regon().random();
       var regon2 = regon().random();
@@ -22,9 +17,13 @@ describe('regon', function () {
     });
   });
 
-  describe('isValid', function () {
+  describe('#isValid', function () {
     it('should return true for valid REGON', function () {
       expect(regon('550440322').isValid()).to.be.true;
+    });
+
+    it('should return true for valid REGON with checksum equal 10', function () {
+      expect(regon('386685250').isValid()).to.be.true;
     });
 
     it('should return false for too long REGON', function () {
