@@ -1,8 +1,7 @@
 'use strict';
 
 var pesel = require('../lib/pesel');
-var chai = require('chai');
-var expect = chai.expect;
+var expect = require('chai').expect;
 
 describe('PESEL', function () {
 

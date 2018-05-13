@@ -1,8 +1,7 @@
 'use strict';
 
 var nip = require('../lib/nip');
-var chai = require('chai');
-var expect = chai.expect;
+var expect = require('chai').expect;
 
 describe('NIP', function () {
 
