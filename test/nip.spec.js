@@ -4,7 +4,7 @@ var nip = require('../lib/nip');
 var chai = require('chai');
 var expect = chai.expect;
 
-describe('nip', function () {
+describe('NIP', function () {
 
   describe('#random', function () {
     it('should return random NIP', function () {

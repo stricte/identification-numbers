@@ -4,7 +4,7 @@ var regon = require('../lib/regon');
 var chai = require('chai');
 var expect = chai.expect;
 
-describe('regon', function () {
+describe('REGON', function () {
 
   describe('#random9', function () {
     it('should return random 9 digit REGON', function () {

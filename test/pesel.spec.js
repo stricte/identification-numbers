@@ -4,7 +4,7 @@ var pesel = require('../lib/pesel');
 var chai = require('chai');
 var expect = chai.expect;
 
-describe('pesel', function () {
+describe('PESEL', function () {
 
   describe('#random', function () {
     it('random PESEL is not implemented yet', function () {

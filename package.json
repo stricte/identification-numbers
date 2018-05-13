@@ -1,5 +1,5 @@
 {
-  "name": "identification-numbers-pl",
+  "name": "id-pl",
   "version": "0.0.1-alpha.2",
   "description": "Provides utility methods to validate and generate various identification numbers used in Poland such as NIP, REGON, PESEL, etc.",
   "keywords": [
@@ -13,10 +13,10 @@
   "author": "Daniel Pacak <pacak.daniel@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SOFTWARE-CLINIC/identification-numbers-pl.git"
+    "url": "https://github.com/SOFTWARE-CLINIC/id-pl.git"
   },
   "bugs": {
-    "url": "https://github.com/SOFTWARE-CLINIC/identification-numbers-pl/issues"
+    "url": "https://github.com/SOFTWARE-CLINIC/id-pl/issues"
   },
   "license": "MIT",
   "engines": {
