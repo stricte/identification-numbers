@@ -21,8 +21,9 @@ $ npm install id-pl --save --save-exact
 ## Quick Start
 
 ```js
-var ids = require('id-pl');
+const PESEL = require('id-pl').PESEL;
+const REGON = require('id-pl').REGON;
 
-expect(ids.pesel('83071503434').isValid()).to.be.true;
-expect(ids.regon('975124224').isValid()).to.be.true;
+expect(PESEL.isValid('83071503434')).to.be.true;
+expect(REGON.isValid('975124224')).to.be.true;
 ```

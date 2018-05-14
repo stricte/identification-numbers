@@ -1,20 +1,20 @@
 'use strict';
 
-var index = require('../index');
-var expect = require('chai').expect;
+const index = require('../index');
+const expect = require('chai').expect;
 
 describe('index', function () {
 
-  it('should export nip', function () {
-    expect(index.nip).to.exist;
+  it('should export NIP', function () {
+    expect(index.NIP).to.exist;
   });
 
-  it('should export pesel', function () {
-    expect(index.pesel).to.exist;
+  it('should export PESEL', function () {
+    expect(index.PESEL).to.exist;
   });
 
-  it('should export regon', function () {
-    expect(index.regon).to.exist;
+  it('should export REGON', function () {
+    expect(index.REGON).to.exist;
   });
 
 });
