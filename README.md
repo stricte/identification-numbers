@@ -1,45 +1,29 @@
-Identification Numbers
-======================
-[![Build Status](https://travis-ci.org/danielpacak/identification-numbers.svg?branch=master)](https://travis-ci.org/danielpacak/identification-numbers)
-[![npm version](https://badge.fury.io/js/identification-numbers.svg)](http://badge.fury.io/js/identification-numbers)
-[![Dependency Status](https://david-dm.org/danielpacak/identification-numbers.svg)](https://david-dm.org/danielpacak/identification-numbers)
-[![devDependency Status](https://david-dm.org/danielpacak/identification-numbers/dev-status.svg)](https://david-dm.org/danielpacak/identification-numbers#info=devDependencies)
+# id-pl
 
-Provides utility methods to validate and generate various identification numbers such as NIP, REGON, PESEL, etc.
+> Provides utility methods to validate and generate various identification numbers used in Poland such as
+> [NIP](https://pl.wikipedia.org/wiki/NIP), [REGON](https://pl.wikipedia.org/wiki/REGON),
+> [PESEL](https://pl.wikipedia.org/wiki/PESEL), etc.
 
-Note that this project is still in its **incubating** phase.
+[![Build Status](https://travis-ci.org/SOFTWARE-CLINIC/id-pl.svg?branch=master)](https://travis-ci.org/SOFTWARE-CLINIC/id-pl)
+[![npm version](https://badge.fury.io/js/id-pl.svg)](http://badge.fury.io/js/id-pl)
+[![Dependency Status](https://david-dm.org/SOFTWARE-CLINIC/id-pl.svg)](https://david-dm.org/SOFTWARE-CLINIC/id-pl)
+[![Code Climate](https://codeclimate.com/github/SOFTWARE-CLINIC/id-pl/badges/gpa.svg)](https://codeclimate.com/github/SOFTWARE-CLINIC/id-pl)
+[![Test Coverage](https://codeclimate.com/github/SOFTWARE-CLINIC/id-pl/badges/coverage.svg)](https://codeclimate.com/github/SOFTWARE-CLINIC/id-pl/coverage)
+
+> **Note** that this project is still in its **incubating phase**.
 
 ## Installation
 
-```shell
-npm install identification-numbers
+```bash
+$ npm install id-pl --save --save-exact
 ```
 
-## Usage
+## Quick Start
 
 ```js
-var identification_numbers = require('identification-numbers'),
-    pesel = identification_numbers.pesel,
-    regon = identification_numbers.regon;
+const PESEL = require('id-pl').PESEL;
+const REGON = require('id-pl').REGON;
 
-expect(pesel('83071503434').isValid()).toBeTruthy();
-expect(regon('975124224').isValid()).toBeTruthy();
+expect(PESEL.isValid('83071503434')).to.be.true;
+expect(REGON.isValid('975124224')).to.be.true;
 ```
-
-## Release History
-* 0.0.7
-  * Expermienal patch with no changes in code
-* 0.0.6
-  * Fixed [issue #1](https://github.com/danielpacak/identification-numbers/issues/1)
-* 0.0.5
-  * Decode PESEL
-* 0.0.4
-  * Validate PESEL
-* 0.0.3
-  * Added random NIP generator
-  * Added NIP validator
-  * Added random REGON generator
-  * Added REGON validator
-* 0.0.2
-* 0.0.1
-  * Initial release

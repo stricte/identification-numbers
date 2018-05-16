@@ -1,7 +1,7 @@
 {
-  "name": "identification-numbers",
-  "version": "0.0.7",
-  "description": "Provides utility methods to validate and generate various identification numbers such as NIP, REGON, PESEL, etc.",
+  "name": "id-pl",
+  "version": "0.1.0",
+  "description": "Provides utility methods to validate and generate various identification numbers used in Poland such as NIP, REGON, PESEL, etc.",
   "keywords": [
     "random",
     "numbers",
@@ -13,19 +13,29 @@
   "author": "Daniel Pacak <pacak.daniel@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/danielpacak/identification-numbers.git"
+    "url": "https://github.com/SOFTWARE-CLINIC/id-pl.git"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/danielpacak/identification-numbers/blob/master/LICENSE-MIT"
-    }
+  "bugs": {
+    "url": "https://github.com/SOFTWARE-CLINIC/id-pl/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "main": "index.js",
+  "files": [
+    "lib",
+    "index.js"
   ],
-  "dependencies": {},
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.11.1",
-    "grunt-jasmine-node": "^0.3.1"
+  "scripts": {
+    "test": "mocha -R spec test/**/*.spec.js",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec test/**/*.spec.js",
+    "coveragetocodeclimate": "codeclimate-test-reporter < ./coverage/lcov.info"
   },
-  "main": "lib/identification-numbers"
+  "devDependencies": {
+    "chai": "4.1.2",
+    "codeclimate-test-reporter": "0.5.0",
+    "istanbul": "0.4.5",
+    "mocha": "5.1.1"
+  }
 }
